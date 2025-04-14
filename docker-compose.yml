@@ -12,5 +12,5 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
     volumes:
-      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
-      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - .data/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - .data/ASP.NET/Https:/root/.aspnet/https:ro
